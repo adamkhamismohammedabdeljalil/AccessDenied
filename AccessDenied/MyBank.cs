@@ -11,10 +11,11 @@ namespace AccessDenied
     {
          // a public property
         public string Name { get; set; }
+        private string Password { get; set; }   
 
         //protected int AccountNumber { get; set; }  
         internal int AccountNumber { get; set; }
-        public int Balance { get; set;}
+        protected int Balance { get; set;}
         internal void CreditPrompt() {
             Console.WriteLine($"Dear {Name}, you have {Balance} FrinkCoins in your account {AccountNumber}.");
         }  
